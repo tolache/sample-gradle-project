@@ -17,6 +17,6 @@ public class HelloWorldTest {
         String str = out.toString();
 
         //Assert
-        Assert.assertEquals("Hello, World!\r\n", str);
+        Assert.assertThat(str, CoreMatchers.containsString("Hello, World!"));
     }
 }
