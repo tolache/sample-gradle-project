@@ -1,6 +1,7 @@
 plugins {
     id 'java'
 }
+
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -18,5 +19,11 @@ jar {
         attributes(
                 'Main-Class': 'com.example.helloworld.HelloWorld'
         )
+    }
+}
+
+tasks.register('sleep') {
+    doLast {
+        sleep(120 * 1000)
     }
 }
