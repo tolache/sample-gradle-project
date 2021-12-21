@@ -9,7 +9,14 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         print(System.out);
+        listJvmArgs();
+    }
 
+    public static void print(PrintStream out) {
+        out.println("Hello, World!");
+    }
+
+    public static voice listJvmArgs() {
         RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
         List<String> jvmArgs = bean.getInputArguments();
 
@@ -18,9 +25,5 @@ public class HelloWorld {
         for (String jvmArg : jvmArgs) {
             System.out.println(jvmArg);
         }
-    }
-
-    public static void print(PrintStream out) {
-        out.println("Hello, World!");
     }
 }
