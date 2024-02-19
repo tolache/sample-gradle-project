@@ -10,6 +10,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         print(System.out);
         listJvmArgs();
+        String unusedVariable = "";
     }
 
     public static void print(PrintStream out) {
