@@ -16,7 +16,7 @@ public class HelloWorld {
         out.println("Hello, World!");
     }
 
-    public static voice listJvmArgs() {
+    public static void listJvmArgs() {
         RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
         List<String> jvmArgs = bean.getInputArguments();
 
