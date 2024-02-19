@@ -1,4 +1,4 @@
-# gradles-sample
+# gradle-sample
 This is a sample Gradle project for testing CI capabilities.
 
 ## Usage
