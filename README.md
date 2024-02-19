@@ -3,7 +3,7 @@ This is a sample Gradle project for testing CI capabilities.
 
 ## Usage
 
-1. (Optional) If you want to use a Gradle version different from what used in this project, create new wrapper infrastructure by running:
+1. (Optional) If you want to use a Gradle version different from [what is used in this project](gradle/wrapper/gradle-wrapper.properties#L3), create new wrapper infrastructure by running:
 
 ```
 gradle wrapper
