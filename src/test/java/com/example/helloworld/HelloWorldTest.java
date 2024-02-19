@@ -16,6 +16,6 @@ public class HelloWorldTest {
         String str = out.toString();
 
         //Assert
-        Assert.assertEquals("Hello, World!\r\n", str);
+        Assert.assertEquals("Hello, World!" + System.lineSeparator(), str);
     }
 }
