@@ -12,6 +12,10 @@ public class HelloWorld {
         listJvmArgs();
     }
 
+    void implicitCastToLong(int i) {
+        long val = 65536 * i;
+    }
+
     public static void print(PrintStream out) {
         out.println("Hello, World!");
     }
