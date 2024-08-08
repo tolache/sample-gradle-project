@@ -2,8 +2,8 @@ package com.example.helloworld;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HelloWorldTest {
     @Test
@@ -16,6 +16,6 @@ public class HelloWorldTest {
         String str = out.toString();
 
         //Assert
-        Assert.assertEquals("Hello, World!" + System.lineSeparator(), str);
+        assertEquals("Hello, World!" + System.lineSeparator(), str);
     }
 }
