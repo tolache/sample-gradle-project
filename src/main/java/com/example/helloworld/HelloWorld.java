@@ -8,26 +8,26 @@ import java.util.*;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        print(System.out);
-        listJvmArgs();
+        greet(System.out);
+        listJvmArgs(System.out);
     }
 
     void implicitCastToLong(int i) {
         long val = 65536 * i;
     }
 
-    public static void print(PrintStream out) {
+    public static void greet(PrintStream out) {
         out.println("Hello, World!");
     }
 
-    public static void listJvmArgs() {
+    public static void listJvmArgs(PrintStream out) {
         RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
         List<String> jvmArgs = bean.getInputArguments();
 
-        System.out.println("JVM args count: " + jvmArgs.size());
+        out.println("JVM args count: " + jvmArgs.size());
 
         for (String jvmArg : jvmArgs) {
-            System.out.println(jvmArg);
+            out.println(jvmArg);
         }
     }
 }
