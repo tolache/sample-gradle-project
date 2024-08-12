@@ -13,7 +13,7 @@ public class HelloWorld {
     }
 
     void implicitCastToLong(int i) {
-        long val = 65536 * i;
+        long val = 65536 * i; // trigger implicit cast inspection
     }
 
     public static void greet(PrintStream out) {
