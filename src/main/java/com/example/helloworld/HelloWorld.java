@@ -6,14 +6,13 @@ import java.lang.management.RuntimeMXBean;
 import java.util.*;
 
 public class HelloWorld {
-
     public static void main(String[] args) {
         greet(System.out);
         listJvmArgs(System.out);
     }
 
     void implicitCastToLong(int i) {
-        long val = 65536 * i; // trigger implicit cast inspection
+        long val = 65536 * i; // trigger implicit cast inspection!
     }
 
     public static void greet(PrintStream out) {
