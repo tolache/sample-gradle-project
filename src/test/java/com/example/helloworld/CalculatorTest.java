@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTest {
     @Test
-    public void add_TwoPlusTwo_ReturnsFour() throws Exception {
+    public void add_TwoPlusTwo_ReturnsFour() {
         //Arrange
         Calculator calc = new Calculator();
 
@@ -17,7 +17,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void add_TwoByTwo_ReturnsFour() throws Exception {
+    public void add_TwoByTwo_ReturnsFour() {
         //Arrange
         Calculator calc = new Calculator();
 
