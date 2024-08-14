@@ -15,4 +15,16 @@ public class CalculatorTest {
         //Assert
         assertEquals(4, actual);
     }
+
+    @Test
+    public void add_TwoByTwo_ReturnsFour() throws Exception {
+        //Arrange
+        Calculator calc = new Calculator();
+
+        //Act
+        int actual = calc.multiply(2,2);
+
+        //Assert
+        assertEquals(4, actual);
+    }
 }
