@@ -1,11 +1,16 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 version '1.0-SNAPSHOT'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClass = 'com.example.helloworld.HelloWorld'
 }
 
 repositories {

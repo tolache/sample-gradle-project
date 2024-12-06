@@ -9,6 +9,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         greet(System.out);
         listJvmArgs(System.out);
+        printMaxHeapSize(System.out);
     }
 
     void implicitCastToLong(int i) {
@@ -28,5 +29,10 @@ public class HelloWorld {
         for (String jvmArg : jvmArgs) {
             out.println(jvmArg);
         }
+    }
+
+    public static void printMaxHeapSize(PrintStream out) {
+        long maxHeapSize = Runtime.getRuntime().maxMemory();
+        out.println("Maximum Heap Size: " + (maxHeapSize / (1024 * 1024)) + " MB");
     }
 }
